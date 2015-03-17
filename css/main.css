@@ -1,0 +1,459 @@
+/* CSS Document */
+
+/*font for IE*/
+@font-face {
+    font-family: UnicumCondThinC; /* Имя шрифта */
+    src: url(../fonts/UnicumCondThinC.eot); /* Путь к файлу со шрифтом */
+    src: local(UnicumCondThinC), url(../fonts/UnicumCondThinC.eot);
+}
+/*font*/
+@font-face {
+	font-family: UnicumCondThinC; /* Имя шрифта */
+	src: url(../fonts/UnicumCondThinC.otf); /* Путь к файлу со шрифтом */
+	src: local(UnicumCondThinC), url(../fonts/UnicumCondThinC.otf);
+   }
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 35px;
+	/* background: url(../images/back1.jpg) repeat 100%; */
+    background: url(../images/bg_blue.jpg) repeat-x fixed center top / auto 100% #EEE;
+	text-align: center; 
+	min-width: 880px; 
+	font-family: verdana, lucida, arial, helvetica, sans-serif;
+}
+
+.pageHeader {
+	background: url(../images/back_logo.jpg) center top no-repeat;
+	border: 1px solid white;
+	width: 878px;
+	height: 360px;
+	border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+	-khtml-border-radius: 15px 15px 0 0;
+	-webkit-border-radius: 15px 15px 0 0;
+	margin:0 auto;
+}
+
+#shadow{
+	background: white;
+	margin:0 auto;
+	width: 880px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	box-shadow: 0 0 40px 12px;
+}
+
+.content{
+	min-height: 400px;
+    text-align:left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content p{
+    font-family: "lucida sans unicode","lucida grande",sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.3;
+    text-indent: 20px;
+}
+
+hr{
+    color:black;
+}
+
+a, a:link, a:visited {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active, a:focus {
+    text-decoration: none;
+    color: #333333;
+}
+
+h2{
+    font-weight: normal;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.logo {
+	background: url(../images/logo.png) center no-repeat;
+	width: 500px;
+	height: 250px;
+	margin:0 auto;
+}
+
+/*top menu*/
+#topnav {
+	background-color: white; 
+	margin-left: auto;  
+	margin-right: auto;  
+	width: 880px;
+	padding-bottom:10px;
+}
+#topnav a:hover {
+	text-decoration: none;
+}
+#topnav ul {
+	text-align: left;
+	display: inline;
+	margin: 0;
+}
+#topnav ul li {
+	font: bold 14px/16px sans-serif;
+	display: inline-block;
+	margin-right: -10px; /*плотность пунктов меню*/
+	position: relative;
+	padding: 6px 15px;
+	background: #fff;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#topnav ul li:hover {
+	background: #FFF2CE;
+	color: #fff;
+}
+#topnav ul li ul {
+	padding: 0;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 170px; /*ширина выпадающего меню */
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	-transition: opacity 0.3s;
+}
+#topnav ul li ul li { 
+	background: #FFF2CE;
+	display: block;
+	color: #fff;
+}
+
+#topnav ul li ul li:hover { 
+	background: #fff;
+}
+
+#topnav ul li:hover ul {
+    z-index: 10;
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+/*navi - ingridients Вывод одного ингридиента*/
+#navigation{
+	display: block;
+	padding-bottom:10px;
+	color: #333333;
+	font-size:11pt;
+	}
+	
+#navigation a{
+	font-weight:normal;
+}
+	
+.ingridient, .cocktail{
+	width:600px;
+	margin:0 auto;
+}
+
+
+#title{
+	text-align:center;
+}
+
+.float_img{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	float:left; /* Выравнивание по левому краю */
+	margin: 0 7px 0 0;
+}
+
+.float_img_right{
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    float:right; /* Выравнивание по правому краю */
+    margin: 0 7px 0 0;
+}
+
+.cocktail_look{
+    width: 600px;
+    overflow: auto;
+    padding: 10px 0 7px 0;
+}
+.cocktail_look a{
+    font-weight: normal;
+}
+
+/*вывод ингридиетов списком рядами*/
+.list{
+    display:inline-block;
+    min-width: 800px;
+    clear: both;
+}
+
+.list-item{
+	line-height: 1em;
+	width:100px; 
+	height:137px; 
+	float:left; 
+	margin-left:17px; 
+	text-align:center;
+	font-size: 70%;
+	padding-top:10px;
+}
+
+.list-item a{
+	color:black;
+}
+
+.list-item img{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+        }
+/* Вывод списка коктейлей с указанием ингридаентов */
+.row-list-drink{
+    display:inline-block;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    margin: 50px 0px 0px;
+    min-width: 830px;
+}
+
+.row-list-drink .list-item{
+    margin-right: 17px;
+}
+
+.list-items-and-operators{
+    float: left;
+    width: 670px;
+}
+
+.list-drink {
+    float: left;
+    margin-top: -55px;
+    width: 112px;
+    text-align:center;
+    font-size: 70%;
+    height:170px;
+  }
+
+.list-drink a{
+    color:black;
+}
+
+.list-drink img{
+    height:170px;
+}
+
+.group-list-drink :last-child{
+    border-bottom: 0;
+}
+
+.operator {
+    float: left;
+    vertical-align: middle;
+    line-height: 110px;
+    font-size: 34px;
+    color: #AAA;
+}
+
+/* Список коктейлей списком рядами*/
+.list-item-drinks {
+    float: left;
+    width: 110px;
+    text-align: center;
+    font-size: 70%;
+    margin-left: 10px;
+    height: 240px;
+}
+.list-item-drinks img{
+    width:112px;
+}
+.list-item-drinks a{
+    color: black;
+}
+
+/* Вывод коктейля */
+.cocktail h3{
+    text-align: center;
+	padding: 10px 0 15px 0;
+}
+.drink_info{
+	overflow: hidden;
+    min-height: 375px;
+}
+
+.text{
+    float:right;
+    width:400px;
+    min-height:200px;
+    padding-bottom: 10px;
+}
+
+.text ol{
+    padding-left: 20px;
+}
+
+.cocktail_img{
+    vertical-align:bottom;
+    display:inline-block;
+    float:left;
+}
+
+.tables{
+    display: inline-block;
+}
+
+.table_ing {
+    float: left;
+
+}
+
+.table_devices{
+    float: right;
+    margin-left: 20px;
+}
+
+.table_ing a{
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.table_devices a{
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.table_ing caption{
+    width: 290px;
+    border-bottom: 3px solid #8C8C8C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+
+}
+
+.table_devices  caption{
+    width: 290px;
+    border-bottom: 3px solid #8C8C8C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+}
+
+/*search*/
+
+#search-box .query, #search-box .button {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#search-box .query {
+    color: inherit;
+    width: 550px;
+    border: 1px solid #606060;
+    border-bottom: 0px;
+}
+
+#search-box li {
+    cursor: pointer;
+    list-style: outside none none;
+}
+
+.autocomplete li:hover{
+    background: #FFF2CE;
+}
+
+#search-box .button {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#search-box .autocomplete {
+    position: absolute;
+    width: 550px;
+    border:1px solid #606060;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-top: 0;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    z-index: 1;
+}
+
+#clear_href{
+    font-weight: normal;
+}
+
+.list-item .x_button_red {
+    opacity: 0.5;
+    position: absolute;
+    background: url("../images/X_button_red.gif") no-repeat scroll 0px 0px transparent;
+    cursor: pointer;
+    height: 11px;
+    width: 11px;
+    margin-left: 84px;
+}
+
+.list-item .x_button_red:hover{
+    opacity: 1;
+}
+
+/*footer */
+
+#minzdrav{
+	color:black;
+	font-family: UnicumCondThinC;
+	font-size: 350%;
+	word-spacing: 2.5pt;
+    text-align: center;
+}
+
+.footer {
+	color:#333333;
+	clear: left;
+	padding-top:25px;
+	font-size: 75%;
+	border-radius: 0 0 15px 15px;
+	-moz-border-radius: 0 0 15px 15px;
+	-khtml-border-radius: 0 0 15px 15px;
+	-webkit-border-radius: 0 0 15px 15px;
+	margin:0 auto;
+}

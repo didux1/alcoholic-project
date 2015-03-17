@@ -1,0 +1,74 @@
+/* CSS Document */
+
+.form_add{
+width:600px;
+margin-left:auto;
+margin-right:auto;
+padding:10px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.content form select{
+    width:200px;
+    height: 25px;
+}
+
+.form_add p {
+text-indent: 0;
+}
+
+
+#form_title{
+width:300px;
+height:20px;
+}
+
+#form_textarea{
+width:300px;
+height:100px;
+}
+
+.button{
+    width:25px;
+    height: 25px;
+}
+
+/* кнопка Добавить*/
+#button{
+    text-align:center;
+}
+
+#form_submit {
+background: #E38E2E;
+padding: 7px 30px;
+font-size: 13px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+border: solid 1px #E38E2E;
+cursor: pointer;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background: -moz-linear-gradient(0% 100% 90deg,  #E38E2E, #FDCB73);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E38E2E), to(#FDCB73));
+box-shadow: inset 0 1px 0 0 #FFFFFF;
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+
+#form_submit:hover {
+background: #FDCB73;
+background: -moz-linear-gradient(0% 100% 90deg, #FDCB73, #E38E2E);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E38E2E), to(#FDCB73)); 
+}
+
+#form_submit:active {
+background: #FDCB73;
+background: -moz-linear-gradient(0% 100% 90deg, #FDCB73, #E38E2E);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E38E2E), to(#FDCB73));
+box-shadow: inset 1px 1px 0 0 #E38E2E;
+-moz-box-shadow: inset 1px 1px 0 0 #E38E2E;
+-webkit-box-shadow: inset 1px 1px 0 0 #E38E2E;
+padding: 8px 29px 6px 31px; 
+}
