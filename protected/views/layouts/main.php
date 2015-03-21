@@ -88,7 +88,7 @@
                         array('label'=>'Вермуты', 'url'=>array('/')),
                         array('label'=>'Вина', 'url'=>array('/')),
                         array('label'=>'Игристые вина', 'url'=>array('/')),
-                        array('label'=>'Пиво и сидр', 'url'=>array('/')),
+                        array('label'=>'Пиво и сидр', 'url'=>array('/ingridients/beer')),
                         array('label'=>'Биттеры', 'url'=>array('/')),
                         array('label'=>'Сиропы', 'url'=>array('/')),
                         array('label'=>'Соки и морсы', 'url'=>array('/')),
