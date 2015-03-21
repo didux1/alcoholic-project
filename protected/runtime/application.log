@@ -22,3 +22,224 @@ REQUEST_URI=/alcoholic/index.php?r=site/index
 in /var/www/alcoholic/protected/views/layouts/main.php (72)
 in /var/www/alcoholic/protected/views/layouts/column1.php (6)
 in /var/www/alcoholic/protected/controllers/SiteController.php (32)
+2015/03/18 21:29:41 [error] [php] Illegal string offset 'label' (/var/www/yii/framework/zii/widgets/CMenu.php:273)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(147): CMenu->init()
+#1 /var/www/yii/framework/web/CBaseController.php(180): SiteController->createWidget()
+#2 /var/www/alcoholic/protected/views/layouts/main.php(81): SiteController->widget()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#9 /var/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#10 /var/www/alcoholic/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/yii/framework/web/actions/CViewAction.php(140): SiteController->render()
+#15 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#16 /var/www/yii/framework/web/CController.php(308): CViewAction->runWithParams()
+#17 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=site/page&view=about
+2015/03/18 21:30:26 [error] [php] Illegal string offset 'label' (/var/www/yii/framework/zii/widgets/CMenu.php:273)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(147): CMenu->init()
+#1 /var/www/yii/framework/web/CBaseController.php(180): SiteController->createWidget()
+#2 /var/www/alcoholic/protected/views/layouts/main.php(81): SiteController->widget()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#9 /var/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#10 /var/www/alcoholic/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/yii/framework/web/actions/CViewAction.php(140): SiteController->render()
+#15 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#16 /var/www/yii/framework/web/CController.php(308): CViewAction->runWithParams()
+#17 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=site/page&view=about
+2015/03/18 21:30:29 [error] [php] Illegal string offset 'label' (/var/www/yii/framework/zii/widgets/CMenu.php:273)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(147): CMenu->init()
+#1 /var/www/yii/framework/web/CBaseController.php(180): SiteController->createWidget()
+#2 /var/www/alcoholic/protected/views/layouts/main.php(81): SiteController->widget()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#9 /var/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#10 /var/www/alcoholic/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/alcoholic/protected/controllers/SiteController.php(32): SiteController->render()
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=site/index
+2015/03/18 21:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php
+---
+2015/03/18 21:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/index
+---
+2015/03/18 21:39:53 [error] [php] Undefined offset: 0 (/var/www/yii/framework/zii/widgets/CMenu.php:314)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(147): CMenu->init()
+#1 /var/www/yii/framework/web/CBaseController.php(180): SiteController->createWidget()
+#2 /var/www/alcoholic/protected/views/layouts/main.php(83): SiteController->widget()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 /var/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#9 /var/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#10 /var/www/alcoholic/protected/views/layouts/column1.php(6): SiteController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(126): require()
+#12 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#13 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#14 /var/www/alcoholic/protected/controllers/SiteController.php(32): SiteController->render()
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#17 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#18 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#19 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#20 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=site/index
+2015/03/18 21:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/
+---
+2015/03/18 21:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/
+---
+2015/03/18 21:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/
+---
+2015/03/18 21:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/alco".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/alco')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/all
+---
+2015/03/18 21:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php
+---
+2015/03/19 20:41:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/contact
+---
+2015/03/19 20:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/all
+---
+2015/03/19 20:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/all
+---
+2015/03/19 20:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/all
+---
+2015/03/19 20:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php
+---
+2015/03/21 09:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php
+---

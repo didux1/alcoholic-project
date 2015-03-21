@@ -18,6 +18,7 @@
     </div>
 
     <div id="topnav">
+        <?php /*
         <ul>
             <li><a href="index.php">Домой</a></li>
             <li><a href="shaker.php">Шейкер</a></li>
@@ -64,6 +65,54 @@
                 </ul>
             </li>
         </ul>
+ */ ?>
+        <?php $this->widget('zii.widgets.CMenu',array(
+            'items'=>array(
+                array('label'=>'Домой', 'url'=>array('/site/index')),
+                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                array('label'=>'Contact', 'url'=>array('/site/contact')),
+                array('label'=>'Коктейли', 'url'=>array('/cocktails/all'),
+                    'items'=>array(
+                        array('label'=>'Все', 'url'=>array('/cocktails/all')),
+                        array('label'=>'Алкогольные', 'url'=>array('/cocktails/alco')),
+                        array('label'=>'Безалкогольные', 'url'=>array('/cocktails/non-alco')),
+                        array('label'=>'Шоты', 'url'=>array('/cocktails/shot')),
+                        array('label'=>'Лаунж', 'url'=>array('/cocktails/lounge')),
+                    ),
+                ),
+                array('label'=>'Ингридиенты', 'url'=>array('/cocktails/all'),
+                    'items'=>array(
+                        array('label'=>'Все', 'url'=>array('/')),
+                        array('label'=>'Крепкий алкоголь', 'url'=>array('/')),
+                        array('label'=>'Ликеры и настойки', 'url'=>array('/')),
+                        array('label'=>'Вермуты', 'url'=>array('/')),
+                        array('label'=>'Вина', 'url'=>array('/')),
+                        array('label'=>'Игристые вина', 'url'=>array('/')),
+                        array('label'=>'Пиво и сидр', 'url'=>array('/')),
+                        array('label'=>'Биттеры', 'url'=>array('/')),
+                        array('label'=>'Сиропы', 'url'=>array('/')),
+                        array('label'=>'Соки и морсы', 'url'=>array('/')),
+                        array('label'=>'Вода и напитки', 'url'=>array('/')),
+                        array('label'=>'Чай и кофе', 'url'=>array('/')),
+                        array('label'=>'Фрукты', 'url'=>array('/')),
+                        array('label'=>'Мол. продукты. Яйца', 'url'=>array('/')),
+                        array('label'=>'Ягоды', 'url'=>array('/')),
+                        array('label'=>'Овощи', 'url'=>array('/')),
+                        array('label'=>'Травы и цветы', 'url'=>array('/')),
+                        array('label'=>'Соусы и масло', 'url'=>array('/')),
+                        array('label'=>'Специи', 'url'=>array('/')),
+                        array('label'=>'Добавки', 'url'=>array('/')),
+                    ),
+                ),
+                array('label'=>'Девайсы', 'url'=>array('/cocktails/all'),
+                    'items'=>array(
+                        array('label'=>'Все', 'url'=>array('/')),
+                        array('label'=>'Посуда', 'url'=>array('/')),
+                        array('label'=>'Инструменты', 'url'=>array('/')),
+                        array('label'=>'Украшения', 'url'=>array('/')),
+                    ),
+                ),
+        ))); ?>
         <hr>
     </div>
 
