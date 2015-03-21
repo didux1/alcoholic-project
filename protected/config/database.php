@@ -6,7 +6,7 @@ return array(
 	'connectionString' => 'mysql:host=localhost;dbname=alcoholic',
 	'emulatePrepare' => true,
 	'username' => 'root',
-	'password' => '',
+	'password' => '1',
 	'charset' => 'utf8',
 
 );
