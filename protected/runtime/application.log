@@ -448,3 +448,61 @@ Stack trace:
 REQUEST_URI=/alcoholic/index.php?r=cocktails/all
 HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/beer
 ---
+2015/03/21 21:06:36 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2015/03/21 21:06:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /web/yii/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /web/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /web/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /web/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /web/yii/framework/base/CApplication.php(458): CModule->getComponent('db')
+#4 /web/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /web/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /web/yii/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /web/alcho1/protected/controllers/IngridientsController.php(22): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /web/yii/framework/web/actions/CInlineAction.php(49): IngridientsController->actionBeer()
+#9 /web/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /web/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /web/yii/framework/web/CWebApplication.php(282): CController->run('beer')
+#13 /web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ingridients/bee...')
+#14 /web/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /web/alcho1/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=ingridients/beer
+HTTP_REFERER=http://alcho1.dev/
+---
+2015/03/21 21:10:30 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2015/03/21 21:10:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /web/yii/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /web/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /web/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /web/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /web/yii/framework/base/CApplication.php(458): CModule->getComponent('db')
+#4 /web/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /web/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /web/yii/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /web/alcho1/protected/controllers/IngridientsController.php(22): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /web/yii/framework/web/actions/CInlineAction.php(49): IngridientsController->actionBeer()
+#9 /web/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /web/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /web/yii/framework/web/CWebApplication.php(282): CController->run('beer')
+#13 /web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ingridients/bee...')
+#14 /web/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /web/alcho1/index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=ingridients/beer
+HTTP_REFERER=http://alcho1.dev/index.php?r=ingridients/beer
+---
+2015/03/21 21:16:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /web/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ingridients/vie...')
+#5 /web/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /web/alcho1/index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php?r=ingridients/view
+---

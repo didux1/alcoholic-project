@@ -113,4 +113,13 @@ class Ingridients extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	/**
+	 * @param array $params
+	 *
+	 * @return string
+	 */
+	public static function getCurrentUrl($params = array()) {
+		return Yii::app()->createUrl('/ingridients/current', $params);
+	}
 }
