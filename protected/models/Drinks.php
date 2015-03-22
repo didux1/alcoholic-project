@@ -51,8 +51,7 @@ class Drinks extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'drinkIngs' => array(self::HAS_MANY, 'DrinkIng', 'drink_id'),
-            'ings' => array(self::HAS_MANY, 'Ingridients', 'ing_id', 'through' => 'drinkIngs'),
+			'many-many' => array(self::MANY_MANY, 'Ingridients', 'drink_ing(drink_id, ing_id)'),
 		);
 	}
 
