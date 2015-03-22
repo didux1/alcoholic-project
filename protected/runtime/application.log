@@ -1015,3 +1015,354 @@ Stack trace:
 #4 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
 #5 /var/www/alcoholic/index.php(19): CWebApplication->run()
 REQUEST_URI=/alcoholic/index.php?r=ingridients/all
+2015/03/22 12:32:07 [error] [php] include(CdBCriteria.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/DrinksController.php(11): spl_autoload_call()
+#1 unknown(0): DrinksController->actionCurrent()
+#2 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=12
+2015/03/22 12:32:59 [error] [php] include(CdBCriteria.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/DrinksController.php(11): spl_autoload_call()
+#1 unknown(0): DrinksController->actionCurrent()
+#2 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=12
+2015/03/22 12:33:23 [error] [php] include(CdBCriteria.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/DrinksController.php(11): spl_autoload_call()
+#1 unknown(0): DrinksController->actionCurrent()
+#2 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=20
+2015/03/22 12:33:27 [error] [php] include(CdBCriteria.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/DrinksController.php(11): spl_autoload_call()
+#1 unknown(0): DrinksController->actionCurrent()
+#2 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=40
+2015/03/22 12:33:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#4 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#5 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/alcoholic/index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current
+---
+2015/03/22 12:35:05 [error] [php] include(CdBCriteria.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/DrinksController.php(11): spl_autoload_call()
+#1 unknown(0): DrinksController->actionCurrent()
+#2 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=1
+2015/03/22 12:36:23 [error] [exception.CException] exception 'CException' with message 'Drinks and its behaviors do not have a method or closure named "findByAll".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('findByAll', Array)
+#1 /var/www/alcoholic/protected/controllers/DrinksController.php(13): CActiveRecord->__call('findByAll', Array)
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(13): Drinks->findByAll(Object(CDbCriteria))
+#3 [internal function]: DrinksController->actionCurrent('1')
+#4 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#11 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CApplication->run()
+#13 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=1
+---
+2015/03/22 12:36:24 [error] [exception.CException] exception 'CException' with message 'Drinks and its behaviors do not have a method or closure named "findByAll".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('findByAll', Array)
+#1 /var/www/alcoholic/protected/controllers/DrinksController.php(13): CActiveRecord->__call('findByAll', Array)
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(13): Drinks->findByAll(Object(CDbCriteria))
+#3 [internal function]: DrinksController->actionCurrent('1')
+#4 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#11 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CApplication->run()
+#13 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=1
+---
+2015/03/22 12:36:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many-many`.`id` AS `t1_c0`, `many-many`.`ing_title` AS `t1_c1`, `many-many`.`ing_desc` AS `t1_c2`, `many-many`.`ing_type` AS `t1_c3`, `many-many`.`ing_img` AS `t1_c4`, `many-many`.`ing_type_rus` AS `t1_c5`, `many-many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many-many_many-many` ON (`t`.`id`=`many-many_many-many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many-many` ON (`many-many`.`id`=`many-many_many-many`.`ing_id`) WHERE (id=:ycp0).
+2015/03/22 12:36:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(13): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCurrent('1')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=1
+---
+2015/03/22 12:38:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drinks.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many-many`.`id` AS `t1_c0`, `many-many`.`ing_title` AS `t1_c1`, `many-many`.`ing_desc` AS `t1_c2`, `many-many`.`ing_type` AS `t1_c3`, `many-many`.`ing_img` AS `t1_c4`, `many-many`.`ing_type_rus` AS `t1_c5`, `many-many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many-many_many-many` ON (`t`.`id`=`many-many_many-many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many-many` ON (`many-many`.`id`=`many-many_many-many`.`ing_id`) WHERE (drinks.id=:ycp0).
+2015/03/22 12:38:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drinks.id' in 'where clause'' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(13): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCurrent('1')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=1
+---
+2015/03/22 12:56:32 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.Ingridients" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Ingridients')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__get('Ingridients')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('50')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=50
+---
+2015/03/22 12:56:44 [error] [exception.CException] exception 'CException' with message 'Drinks and its behaviors do not have a method or closure named "Ingridients".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('Ingridients', Array)
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__call('Ingridients', Array)
+#2 /var/www/alcoholic/protected/views/drinks/index.php(10): Drinks->Ingridients()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#4 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#8 [internal function]: DrinksController->actionCurrent('50')
+#9 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/alcoholic/index.php(19): CApplication->run()
+#18 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=50
+---
+2015/03/22 12:58:16 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.ingridients" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ingridients')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__get('ingridients')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('50')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=50
+---
+2015/03/22 13:01:27 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.many" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('many')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__get('many')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('10')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=10
+---
+2015/03/22 13:05:01 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.ingridients" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ingridients')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__get('ingridients')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('25')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=25
+---
+2015/03/22 13:06:27 [error] [php] Trying to get property of non-object (/var/www/alcoholic/protected/views/drinks/index.php:10)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(14): DrinksController->render()
+#3 unknown(0): DrinksController->actionCurrent()
+#4 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#8 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#9 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=25
+2015/03/22 13:07:15 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.ingridients" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ingridients')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(10): CActiveRecord->__get('ingridients')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('25')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=25
+---
+2015/03/22 13:49:24 [error] [php] Undefined variable: recipe (/var/www/alcoholic/protected/views/drinks/index.php:7)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(14): DrinksController->render()
+#3 unknown(0): DrinksController->actionCurrent()
+#4 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/CController.php(286): DrinksController->runAction()
+#8 /var/www/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#9 /var/www/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#10 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=20
+2015/03/22 13:50:03 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.history" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('history')
+#1 /var/www/alcoholic/protected/views/drinks/index.php(27): CActiveRecord->__get('history')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(14): CController->render('index', Array)
+#7 [internal function]: DrinksController->actionCurrent('20')
+#8 /var/www/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('current')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/current')
+#15 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=20
+---
