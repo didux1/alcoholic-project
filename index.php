@@ -1,6 +1,6 @@
 <?php
 
-require(dirname(__FILE__) . '/../yii/framework/YiiBase.php');
+require(dirname(__FILE__) . '/yii/framework/YiiBase.php');
 
 class Yii extends YiiBase {
     /**

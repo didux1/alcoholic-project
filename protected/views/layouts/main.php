@@ -80,9 +80,9 @@
                         array('label'=>'Лаунж', 'url'=>array('/cocktails/lounge')),
                     ),
                 ),
-                array('label'=>'Ингридиенты', 'url'=>array('/cocktails/all'),
+                array('label'=>'Ингридиенты', 'url'=>'#',
                     'items'=>array(
-                        array('label'=>'Все', 'url'=>Yii::app()->createUrl('/ingridients/all')),
+                        array('label'=>'Все', 'url'=>Yii::app()->createUrl('/ingridients/view')),
                         array('label'=>'Крепкий алкоголь', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'strong'))),
                         array('label'=>'Ликеры и настойки', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'liqueur'))),
                         array('label'=>'Вермуты', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'vermouth'))),

@@ -18,6 +18,10 @@
  */
 class Drinks extends CActiveRecord
 {
+    public static function ingUrls($id){
+       return Yii::app()->createUrl('/ingridients/current', array('id' => $id));
+    }
+
 	/**
 	 * @return string the associated database table name
 	 */
