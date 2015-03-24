@@ -13,10 +13,11 @@ class IngridientsController extends Controller
 	 */
 	public function actionView($name=null){
 		$criteria= new CDbCriteria;
-        $criteria->order='ing_type_rus ASC';
         $criteria->compare('is_ing', 1);
+        $criteria->order='ing_type_rus ASC';
         if ($name!=null) {
             $criteria->compare('ing_type', $name);
+            $criteria->order='ing_title ASC';
         }
             $a = Ingridients::model()->findAll($criteria);
 
@@ -35,8 +36,8 @@ class IngridientsController extends Controller
         $criteria_count->compare('ing_id', $id);
         $drinks_count= DrinkIng::model()->count($criteria_count);
 
-        $this->render('current',array('current_ing' =>$current_ing,
-                                      'drinks_count' => $drinks_count,
+        $this->render('current',array('current_ing' => $current_ing,
+                                     'drinks_count' => $drinks_count,
                      ));
 	}
 }

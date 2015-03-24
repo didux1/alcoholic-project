@@ -104,12 +104,12 @@
                         array('label'=>'Добавки', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'addons'))),
                     ),
                 ),
-                array('label'=>'Девайсы', 'url'=>array('/cocktails/all'),
+                array('label'=>'Девайсы', 'url'=>'#',
                     'items'=>array(
-                        array('label'=>'Все', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'beer_cidre'))),
-                        array('label'=>'Посуда', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'beer_cidre'))),
-                        array('label'=>'Инструменты', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'beer_cidre'))),
-                        array('label'=>'Украшения', 'url'=>Yii::app()->createUrl('/ingridients/view', array('name' => 'beer_cidre'))),
+                        array('label'=>'Все', 'url'=>Yii::app()->createUrl('/device/view')),
+                        array('label'=>'Посуда', 'url'=>Yii::app()->createUrl('/device/view', array('name' => 'dishes'))),
+                        array('label'=>'Инструменты', 'url'=>Yii::app()->createUrl('/device/view', array('name' => 'instruments'))),
+                        array('label'=>'Украшения', 'url'=>Yii::app()->createUrl('/device/view', array('name' => 'decoration'))),
                     ),
                 ),
         ))); ?>

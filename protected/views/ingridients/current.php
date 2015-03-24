@@ -6,8 +6,8 @@
 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(
                     'links'=>array(
-                        'Все ингридиенты'=>array('ingridients/view', 'name'=>null),
-                        $current_ing[0]->ing_type_rus=>array('ingridients/view', 'name'=>$current_ing[0]->ing_type),
+                        'Все ингридиенты'=>array('/ingridients/view'),
+                        $current_ing[0]->ing_type_rus=>array('/ingridients/view', 'name'=>$current_ing[0]->ing_type),
                         $current_ing[0]->ing_title,
                     ),
                     'homeLink' => false,
