@@ -1,6 +1,7 @@
 <?php
 /* @var $this IngridientsController */
 $cat=$ings[0]->ing_type_rus;
+var_dump($ings);
 ?>
     <h3><?=$cat?></h3>
 <?php
