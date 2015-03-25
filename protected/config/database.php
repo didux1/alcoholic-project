@@ -9,4 +9,9 @@ return array(
 	'password' => '1',
 	'charset' => 'utf8',
 
+    // включаем профайлер
+    'enableProfiling'=>true,
+    // показываем значения параметров
+    'enableParamLogging' => true,
+
 );

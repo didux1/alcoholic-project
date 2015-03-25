@@ -36,7 +36,6 @@ $recipe = preg_split('/(?=[А-Я])/u', $drink->drink_recipe,-1,PREG_SPLIT_NO_EMP
 ?>
             </table>
         </div>
-    </div>
     <div class='table_devices'>
         <table>
             <caption>Девайсы</caption>
@@ -45,12 +44,13 @@ $recipe = preg_split('/(?=[А-Я])/u', $drink->drink_recipe,-1,PREG_SPLIT_NO_EMP
                     if ($ing->is_ing==0){
                         echo CHtml::openTag('tr');
                         echo CHtml::openTag('td');
-                        echo CHtml::link($ing->ing_title, Drinks::ingUrls($ing->id));
+                        echo CHtml::link($ing->ing_title, Yii::app()->createUrl('device/current',array('id'=>$ing->id)));
                         echo CHtml::closeTag('td');
                         echo CHtml::closeTag('tr');
                     }
                 }
 ?>
         </table>
+    </div>
     </div>
 </div>

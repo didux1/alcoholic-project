@@ -37,7 +37,15 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-
+        'clientScript'=>array(
+            'packages'=>array(
+                'operator'=>array(
+                    'baseUrl'=>'/alcoholic/',
+                    'js'=>array('js/operator.js'),
+                    'depends'=>array('jquery'),         // cause load jquery before load this
+                    ),
+                ),
+            ),
 		// uncomment the following to enable URLs in path-format
 /*
 		'urlManager'=>array(
@@ -63,8 +71,11 @@ return array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
 				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+			//		'class'=>'CFileLogRoute',
+			//		'levels'=>'error, warning',
+                    'class'=>'CProfileLogRoute',
+                    'levels'=>'profile',
+                    'enabled'=>true,
 				),
 				// uncomment the following to show log messages on web pages
 				/*

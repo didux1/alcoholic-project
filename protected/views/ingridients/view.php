@@ -11,7 +11,7 @@ foreach ($ings as $ing) :
     echo CHtml::tag('h3',array(),$cat);
     echo CHtml::closeTag('div');
     }
-    ?>
+?>
 
     <div class="list-item">
         <a href='<?= Ingridients::getCurrentUrl(array('id' => $ing->id))?>'><img src='<?=$ing->ing_img?>' alt='<?=$ing->ing_title?>'><?=$ing->ing_title?></a>

@@ -6868,3 +6868,607 @@ Stack trace:
 REQUEST_URI=/alcoholic/index.php?r=device/view
 HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=device/current&id=479
 ---
+2015/03/24 12:52:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/alcoholic/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=device/current&id=510
+---
+2015/03/24 13:29:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/alco".' in /var/www/alcoholic/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/alco')
+#1 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/all
+---
+2015/03/24 15:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/all".' in /var/www/alcoholic/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/all')
+#1 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=cocktails/alco
+---
+2015/03/24 19:33:33 [error] [php] Undefined offset: 0 (/var/www/alcoholic/protected/controllers/DrinksController.php:14)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#3 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#4 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#5 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/current&id=250
+2015/03/24 19:35:50 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/alcoholic/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/alcoholic/protected/controllers/SiteController.php(54): spl_autoload_call()
+#1 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#2 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/alcoholic/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/alcoholic/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=site/contact
+2015/03/24 21:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&is_alco=alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/all
+---
+2015/03/24 21:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cocktails/non-alco".' in /var/www/alcoholic/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cocktails/non-a...')
+#1 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/alcoholic/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/alcoholic/index.php?r=cocktails/non-alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/view&is_alco=alco
+---
+2015/03/24 21:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&is_alco=alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/all
+---
+2015/03/24 21:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&is_alco=alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/all
+---
+2015/03/24 21:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&is_alco=alco
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/all&is_alco=0
+---
+2015/03/24 22:02:06 [error] [php] Undefined variable: categories (/var/www/alcoholic/protected/views/drinks/view.php:3)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(9): DrinksController->render()
+#3 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(49): DrinksController->actionAll()
+#4 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/all
+2015/03/24 22:02:08 [error] [php] Undefined variable: categories (/var/www/alcoholic/protected/views/drinks/view.php:3)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(9): DrinksController->render()
+#3 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(49): DrinksController->actionAll()
+#4 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/all
+2015/03/24 22:02:10 [error] [php] Undefined variable: categories (/var/www/alcoholic/protected/views/drinks/view.php:3)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(9): DrinksController->render()
+#3 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(49): DrinksController->actionAll()
+#4 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#7 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#8 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/all
+2015/03/24 22:10:01 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.title" is not defined.' in /var/www/alcoholic/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('title')
+#1 /var/www/alcoholic/protected/views/drinks/all.php(16): CActiveRecord->__get('title')
+#2 /var/www/alcoholic/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/alcoholic/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/alcoholic/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/alcoholic/yii/framework/web/CController.php(782): CController->renderPartial('all', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(9): CController->render('all', Array)
+#7 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(49): DrinksController->actionAll()
+#8 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('all')
+#12 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/all')
+#13 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/alcoholic/index.php(19): CApplication->run()
+#15 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/all
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/all
+---
+2015/03/24 22:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "alco".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('alco')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('alco')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/alco')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/alco&is_alco=1
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/index
+---
+2015/03/24 22:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "alco".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('alco')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('alco')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/alco')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/alco&is_alco=0
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/alco&is_alco=1
+---
+2015/03/24 22:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "alco".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('alco')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('alco')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/alco')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/alco&is_alco=0
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/alco&is_alco=1
+---
+2015/03/24 22:36:29 [error] [php] Undefined variable: drink (/var/www/alcoholic/protected/views/drinks/by_alco.php:14)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(25): DrinksController->render()
+#3 unknown(0): DrinksController->actionByAlco()
+#4 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#8 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#9 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#10 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/byalco&is_alco=1
+2015/03/24 22:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/byalco&is_alco=0
+---
+2015/03/24 22:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/byalco&is_alco=1
+---
+2015/03/24 22:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/alcoholic/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/view')
+#3 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/alcoholic/index.php(19): CApplication->run()
+#5 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/view&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/byalco&is_alco=1
+---
+2015/03/24 22:59:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drink_type' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE (drink_type=:ycp0).
+2015/03/24 22:59:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drink_type' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(30): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory('shot')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/view&type=shot
+---
+2015/03/25 07:55:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drink_type' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE (drink_type=:ycp0).
+2015/03/25 07:55:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'drink_type' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(30): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory('shot')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/view&type=shot
+---
+2015/03/25 08:00:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.is_ing' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((drink_type_en=:ycp0) AND (ingridients.is_ing=:ycp1)).
+2015/03/25 08:00:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.is_ing' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(31): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory('shot')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=drinks/view&type=shot
+---
+2015/03/25 08:44:02 [error] [exception.CException] exception 'CException' with message 'Property "Drinks.drink_id" is not defined.' in /var/www/alcoholic/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('drink_id')
+#1 /var/www/alcoholic/protected/views/drinks/by_type.php(12): CActiveRecord->__get('drink_id')
+#2 /var/www/alcoholic/yii/framework/web/CBaseController.php(126): require('/var/www/alcoho...')
+#3 /var/www/alcoholic/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/alcoho...', Array, true)
+#4 /var/www/alcoholic/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/alcoho...', Array, true)
+#5 /var/www/alcoholic/yii/framework/web/CController.php(782): CController->renderPartial('by_type', Array, true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(32): CController->render('by_type', Array)
+#7 [internal function]: DrinksController->actionCategory('shot')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&type=shot
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=site/index
+---
+2015/03/25 14:57:40 [warning] [system.web.CClientScript] There is no CClientScript package: operator
+2015/03/25 14:59:54 [warning] [system.web.CClientScript] There is no CClientScript package: operator
+2015/03/25 15:00:41 [warning] [system.web.CClientScript] There is no CClientScript package: operator
+2015/03/25 15:16:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/alcoholic/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#4 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#5 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/alcoholic/index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=69
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=69
+---
+2015/03/25 15:16:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/alcoholic/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#4 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#5 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/alcoholic/index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=69
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=69
+---
+2015/03/25 15:16:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/alcoholic/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#4 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#5 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/alcoholic/index.php(19): CApplication->run()
+#7 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+---
+2015/03/25 15:18:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND (id=:ycp1)).
+2015/03/25 15:18:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '20')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+---
+2015/03/25 15:18:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND (ingridients.id=:ycp1)).
+2015/03/25 15:18:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '20')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+---
+2015/03/25 15:19:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.'id'='20'))' at line 1. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND ('ingridients'.'id'=:ycp1)).
+2015/03/25 15:19:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.'id'='20'))' at line 1' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '20')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+---
+2015/03/25 15:19:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id='20'))' at line 1. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND ('ingridients'.id=:ycp1)).
+2015/03/25 15:19:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id='20'))' at line 1' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '20')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+---
+2015/03/25 15:19:46 [error] [php] Undefined offset: 0 (/var/www/alcoholic/protected/views/drinks/by_type.php:5)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(39): DrinksController->render()
+#3 unknown(0): DrinksController->actionCategory()
+#4 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#8 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#9 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#10 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+2015/03/25 15:20:44 [error] [php] Undefined offset: 0 (/var/www/alcoholic/protected/views/drinks/by_type.php:6)
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/web/CController.php(869): DrinksController->renderFile()
+#1 /var/www/alcoholic/yii/framework/web/CController.php(782): DrinksController->renderPartial()
+#2 /var/www/alcoholic/protected/controllers/DrinksController.php(39): DrinksController->render()
+#3 unknown(0): DrinksController->actionCategory()
+#4 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/alcoholic/yii/framework/web/CController.php(286): DrinksController->runAction()
+#8 /var/www/alcoholic/yii/framework/web/CController.php(265): DrinksController->runActionWithFilters()
+#9 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): DrinksController->run()
+#10 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/alcoholic/index.php(19): CWebApplication->run()
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=20
+2015/03/25 15:24:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND (ingridients.id=:ycp1)).
+2015/03/25 15:24:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '115')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=115
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=115
+---
+2015/03/25 15:24:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE (ingridients.id=:ycp0).
+2015/03/25 15:24:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '115')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=115
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=115
+---
+2015/03/25 15:39:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND (ingridients.id=:ycp1)). Bound with :ycp0='1', :ycp1='115'.
+2015/03/25 15:39:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '115')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=115
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=115
+---
+2015/03/25 15:39:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`drink_title` AS `t0_c1`, `t`.`drink_recipe` AS `t0_c2`, `t`.`drink_history` AS `t0_c3`, `t`.`drink_type_en` AS `t0_c4`, `t`.`drink_type_rus` AS `t0_c5`, `t`.`drink_img` AS `t0_c6`, `t`.`is_alco` AS `t0_c7`, `many_many`.`id` AS `t1_c0`, `many_many`.`ing_title` AS `t1_c1`, `many_many`.`ing_desc` AS `t1_c2`, `many_many`.`ing_type` AS `t1_c3`, `many_many`.`ing_img` AS `t1_c4`, `many_many`.`ing_type_rus` AS `t1_c5`, `many_many`.`is_ing` AS `t1_c6` FROM `drinks` `t`  LEFT OUTER JOIN `drink_ing` `many_many_many_many` ON (`t`.`id`=`many_many_many_many`.`drink_id`) LEFT OUTER JOIN `ingridients` `many_many` ON (`many_many`.`id`=`many_many_many_many`.`ing_id`) WHERE ((is_ing=:ycp0) AND (ingridients.id=:ycp1)). Bound with :ycp0='1', :ycp1='115'.
+2015/03/25 15:39:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingridients.id' in 'where clause'' in /var/www/alcoholic/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/alcoholic/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(808): CDbCommand->queryAll()
+#2 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/alcoholic/yii/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1361): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/alcoholic/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/alcoholic/protected/controllers/DrinksController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#7 [internal function]: DrinksController->actionCategory(NULL, '115')
+#8 /var/www/alcoholic/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(DrinksController), Array)
+#9 /var/www/alcoholic/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DrinksController), Object(ReflectionMethod), Array)
+#10 /var/www/alcoholic/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/alcoholic/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/alcoholic/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/alcoholic/yii/framework/web/CWebApplication.php(282): CController->run('category')
+#14 /var/www/alcoholic/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('drinks/category')
+#15 /var/www/alcoholic/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/alcoholic/index.php(19): CApplication->run()
+#17 {main}
+REQUEST_URI=/alcoholic/index.php?r=drinks/category&ing_id=115
+HTTP_REFERER=http://127.0.0.1/alcoholic/index.php?r=ingridients/current&id=115
+---

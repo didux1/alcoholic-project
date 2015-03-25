@@ -14,10 +14,9 @@ class IngridientsController extends Controller
 	public function actionView($name=null){
 		$criteria= new CDbCriteria;
         $criteria->compare('is_ing', 1);
-        $criteria->order='ing_type_rus ASC';
+        $criteria->order='ing_type_rus ASC, ing_title ASC';
         if ($name!=null) {
             $criteria->compare('ing_type', $name);
-            $criteria->order='ing_title ASC';
         }
             $a = Ingridients::model()->findAll($criteria);
 
