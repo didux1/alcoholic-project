@@ -32,13 +32,17 @@ class DrinksController extends Controller
         $this->render('by_type',array('drinks'=>$drinks));
     }
 
-    public function actionByIng($id){
+    public function actionByIng($id,$name){
+        $drinksId = Yii::app()->db->createCommand()
+            ->select('drink_id')
+            ->from('drink_ing')
+            ->where('ing_id=:id', array(':id'=>$id))
+            ->queryColumn();
         $criteria = new CDbCriteria;
-         $criteria->compare('ing_id', $id);
-       // $criteria->compare('drink_type_en',$type);
-        $dr=Drinks::model()->with('many_many')->findAll($criteria);
-        $this->render('by_ing',array('dr'=>$dr));
+        $criteria->compare('is_ing', 1);
+        $criteria->addInCondition('drink_id', $drinksId);
+        $a=Drinks::model()->with('many_many')->findAll($criteria);
+        $this->render('by_type',array('drinks'=>$a, 'name'=>$name));
     }
-
 
 }

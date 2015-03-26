@@ -31,7 +31,7 @@ else{
 if ($drinks_count > 0):
 ?>
 <div class='cocktail_look'>
-    <a href='<?=Yii::app()->createUrl('/drinks/byIng', array('id' => $current_ing[0]->id))?>'>Посмотри <?=$drinks_count?> <?=$word?> с ингридиентом <?=$current_ing[0]->ing_title?></a>
+    <a href='<?=Yii::app()->createUrl('/drinks/byIng', array('id' => $current_ing[0]->id, 'name'=>$current_ing[0]->ing_title))?>'>Посмотри <?=$drinks_count?> <?=$word?> с ингридиентом <?=$current_ing[0]->ing_title?></a>
 </div>
 <?php
  endif

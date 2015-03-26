@@ -1,8 +1,11 @@
 <?php
 /* @var $this DrinksController */
 Yii::app()->clientScript->registerPackage('operator');
+if(isset($name)){
+    $msg="Коктейли с ингридиентом $name";
+}
 ?>
-<h3><?=$drinks[0]->drink_type_rus?></h3>
+<h3><?=isset($name) ? $msg : $drinks[0]->drink_type_rus?></h3>
 <div class='group-list-drink'>
     <?php
         foreach($drinks as $drink){
