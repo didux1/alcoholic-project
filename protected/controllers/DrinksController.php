@@ -32,4 +32,13 @@ class DrinksController extends Controller
         $this->render('by_type',array('drinks'=>$drinks));
     }
 
+    public function actionByIng($id){
+        $criteria = new CDbCriteria;
+         $criteria->compare('ing_id', $id);
+       // $criteria->compare('drink_type_en',$type);
+        $dr=Drinks::model()->with('many_many')->findAll($criteria);
+        $this->render('by_ing',array('dr'=>$dr));
+    }
+
+
 }
